@@ -3,12 +3,13 @@
 import { motion } from "framer-motion";
 import { Download, Sparkles } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import { APK_DOWNLOAD_URL, REGISTER_URL, SITE_TAGLINE } from "@/lib/constants";
 import { Badge } from "@/components/ui/Badge";
 import { Button } from "@/components/ui/Button";
 import { HeroBackdrop } from "./HeroBackdrop";
 
-const headingLines = ["Play.", "Win.", "Withdraw Instantly."];
+const headingLines = ["Tashan Win (Tashanwin)", "Login, Register & App Download"];
 
 const container = {
   hidden: {},
@@ -45,26 +46,36 @@ export function Hero() {
 
           <motion.h1
             variants={item}
-            className="max-w-2xl font-heading text-5xl font-bold leading-[1.05] text-cream sm:text-6xl md:text-7xl"
+            className="max-w-2xl font-heading text-4xl font-bold leading-[1.15] text-cream sm:text-5xl md:text-6xl"
           >
-            {headingLines.map((line) => (
+            {headingLines.map((line, index) => (
               <span key={line} className="block">
-                {line === "Withdraw Instantly." ? (
-                  <span className="text-gradient-gold">{line}</span>
-                ) : (
-                  line
-                )}
+                {index === 1 ? <span className="text-gradient-gold">{line}</span> : line}
               </span>
             ))}
           </motion.h1>
 
           <motion.p
             variants={item}
-            className="max-w-lg text-base leading-relaxed text-cream/70 sm:text-lg"
+            className="max-w-xl text-base leading-relaxed text-cream/70 sm:text-lg"
           >
-            Join India&apos;s premium gaming platform — lightning-fast deposits,
-            instant withdrawals and round-the-clock support, all wrapped in an
-            experience built for players who expect more.
+            Tashan Win — also searched as <strong className="text-cream/90">Tashanwin</strong> and{" "}
+            <strong className="text-cream/90">Tasanwin</strong> — is India&apos;s premium
+            real-money gaming platform. Most people land here to do one of three
+            things:{" "}
+            <Link href="/login/" className="font-semibold text-gold hover:text-amber">
+              log in
+            </Link>
+            ,{" "}
+            <Link href="/register/" className="font-semibold text-gold hover:text-amber">
+              register a new account
+            </Link>
+            , or{" "}
+            <Link href="/download-app/" className="font-semibold text-gold hover:text-amber">
+              download the Android app
+            </Link>
+            . All three take under a minute, and every account works the same
+            way whether you play in the browser or in the app.
           </motion.p>
 
           <motion.div variants={item} className="flex flex-wrap gap-4 pt-2">

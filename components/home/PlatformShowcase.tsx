@@ -33,9 +33,9 @@ export function PlatformShowcase() {
   return (
     <section className="relative mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
       <SectionHeading
-        eyebrow="Inside The App"
-        title="Built To Feel Premium"
-        description="A closer look at the Tashanwin experience — from lobby to wallet."
+        eyebrow="Tashan Win App"
+        title="The Tashan Win App, Up Close"
+        description="A closer look at what the Tashan Win app looks like — from lobby to wallet."
         className="mb-16"
       />
 

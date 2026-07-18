@@ -1,6 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Outfit, Poppins } from "next/font/google";
-import { SITE_DESCRIPTION, SITE_NAME, SITE_TAGLINE, SITE_URL } from "@/lib/constants";
+import { SITE_DESCRIPTION, SITE_NAME, SITE_TITLE, SITE_URL } from "@/lib/constants";
 import { organizationJsonLd, websiteJsonLd } from "@/lib/seo";
 import { JsonLd } from "@/components/ui/JsonLd";
 import { Footer } from "@/components/layout/Footer";
@@ -27,15 +27,23 @@ const outfit = Outfit({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: `${SITE_NAME} — ${SITE_TAGLINE}`,
+    default: SITE_TITLE,
     template: `%s | ${SITE_NAME}`,
   },
   description: SITE_DESCRIPTION,
   keywords: [
+    "Tashan Win",
     "Tashanwin",
     "Tasanwin",
-    "Tashan Win",
     "Tashan Win Login",
+    "Tashan Win Register",
+    "Tashan Win App",
+    "Tashan Win Download",
+    "Tashan Win APK",
+    "Tashan Win Bonus",
+    "Tashan Win Gift Code",
+    "Tashan Win Referral",
+    "Tashan Win VIP",
     "Tashanwin Login",
     "Tashanwin Game",
     "Tashanwin App Download",
@@ -53,7 +61,7 @@ export const metadata: Metadata = {
     google: "Wwgnv3BF3AtBr_5aCZwkk9MelSCrtuxflUlB2sXIWto",
   },
   openGraph: {
-    title: `${SITE_NAME} — ${SITE_TAGLINE}`,
+    title: SITE_TITLE,
     description: SITE_DESCRIPTION,
     url: SITE_URL,
     siteName: SITE_NAME,
@@ -62,7 +70,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: `${SITE_NAME} — ${SITE_TAGLINE}`,
+    title: SITE_TITLE,
     description: SITE_DESCRIPTION,
   },
   icons: {

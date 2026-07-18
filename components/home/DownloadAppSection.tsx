@@ -13,9 +13,9 @@ export function DownloadAppSection() {
       <div className="glass-strong grid grid-cols-1 items-center gap-12 overflow-hidden rounded-[2rem] p-8 sm:p-12 lg:grid-cols-2 lg:p-16">
         <div className="flex flex-col gap-6">
           <SectionHeading
-            eyebrow="Mobile App"
-            title="Take Tashanwin Anywhere"
-            description="Install the official Tashanwin Android app for the fastest, smoothest way to play — no app store required."
+            eyebrow="Tashan Win Download"
+            title="Download Tashan Win For Android"
+            description="Install the official Tashan Win Android APK for the fastest, smoothest way to play — no app store required, and no separate account to set up."
             align="left"
           />
           <div className="flex flex-wrap items-center gap-4">

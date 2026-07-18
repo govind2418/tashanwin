@@ -116,3 +116,64 @@ export function breadcrumbJsonLd(items: { name: string; path: string }[]) {
     })),
   };
 }
+
+export function siteNavigationJsonLd(links: { label: string; href: string }[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "SiteNavigationElement",
+    name: links.map((link) => link.label),
+    url: links.map((link) => new URL(link.href, SITE_URL).toString()),
+  };
+}
+
+export function gamesCollectionJsonLd(
+  games: { name: string; description: string; image: string; alt: string }[],
+) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: `${SITE_NAME} Games`,
+    url: SITE_URL,
+    mainEntity: {
+      "@type": "ItemList",
+      itemListElement: games.map((game, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        item: {
+          "@type": "Thing",
+          name: `${SITE_NAME} ${game.name}`,
+          description: game.description,
+          image: new URL(game.image, SITE_URL).toString(),
+        },
+      })),
+    },
+  };
+}
+
+export function webPageJsonLd({
+  name,
+  description,
+  path = "/",
+  primaryImage,
+}: {
+  name: string;
+  description: string;
+  path?: string;
+  primaryImage: { url: string; width: number; height: number };
+}) {
+  const url = new URL(path, SITE_URL).toString();
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    name,
+    description,
+    url,
+    isPartOf: { "@type": "WebSite", name: SITE_NAME, url: SITE_URL },
+    primaryImageOfPage: {
+      "@type": "ImageObject",
+      url: new URL(primaryImage.url, SITE_URL).toString(),
+      width: primaryImage.width,
+      height: primaryImage.height,
+    },
+  };
+}

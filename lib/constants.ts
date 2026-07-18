@@ -1,8 +1,9 @@
 export const SITE_NAME = "Tashanwin";
 export const SITE_URL = "https://tasanwin.com";
 export const SITE_TAGLINE = "India's Premium Gaming Platform";
+export const SITE_TITLE = "Tashan Win | Tashanwin Login, Register & App Download";
 export const SITE_DESCRIPTION =
-  "Tashanwin is India's premium gaming platform — play, win and withdraw instantly. Fast withdrawals, secure gameplay, 24x7 support and daily rewards.";
+  "Tashan Win (Tashanwin, also written Tasanwin) is India's premium gaming platform. Find Tashan Win login, register a free account, download the Android app and explore games, rewards and support — all in one place.";
 
 export const TELEGRAM_URL = "https://t.me/+PQ7K-jtOfiZlYzE1";
 

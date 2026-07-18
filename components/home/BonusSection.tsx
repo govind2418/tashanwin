@@ -14,9 +14,9 @@ export function BonusSection() {
   return (
     <section className="relative mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
       <SectionHeading
-        eyebrow="Rewards"
+        eyebrow="Tashan Win Bonus"
         title="Luxury Rewards, Built In"
-        description="Every tier of play comes with premium rewards designed to keep you ahead."
+        description="Every tier of Tashan Win play comes with premium rewards designed to keep you ahead."
         className="mb-12"
       />
 

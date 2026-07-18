@@ -47,7 +47,17 @@ export function Footer() {
           ))}
         </div>
 
-        <div className="mt-12 flex flex-col gap-4 border-t border-white/5 pt-6 text-xs text-cream/60 sm:flex-row sm:items-center sm:justify-between">
+        <div className="mt-12 border-t border-white/5 pt-6">
+          <p className="max-w-4xl text-xs leading-relaxed text-cream/50">
+            Tashan Win — also searched as Tashanwin and Tasanwin — provides
+            login guidance, registration, app downloads, platform information,
+            promotions, rewards, support and game resources in one place.
+            Whichever spelling brought you here, it leads back to the same
+            account, the same wallet and the same game library.
+          </p>
+        </div>
+
+        <div className="mt-6 flex flex-col gap-4 border-t border-white/5 pt-6 text-xs text-cream/60 sm:flex-row sm:items-center sm:justify-between">
           <p>
             © {year} {SITE_NAME}. All rights reserved.
           </p>

@@ -14,9 +14,9 @@ export function GameCategories() {
   return (
     <section className="relative mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
       <SectionHeading
-        eyebrow="Game Library"
+        eyebrow="Tashan Win Games"
         title="Every Way To Win"
-        description="Eight premium categories, one seamless platform."
+        description="Eight premium categories inside the Tashan Win games library — one seamless platform."
         className="mb-12"
       />
 
