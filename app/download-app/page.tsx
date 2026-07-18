@@ -4,6 +4,7 @@ import Link from "next/link";
 import { buildMetadata } from "@/lib/seo";
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
 import { GlassCard } from "@/components/ui/GlassCard";
+import { ImageContentRow } from "@/components/ui/ImageContentRow";
 import { DownloadAppSection } from "@/components/home/DownloadAppSection";
 
 export const metadata: Metadata = buildMetadata({
@@ -41,7 +42,16 @@ export default function DownloadAppPage() {
       <DownloadAppSection />
 
       <section className="mx-auto max-w-7xl px-4 pb-20 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 gap-5 sm:grid-cols-3">
+        <ImageContentRow
+          eyebrow="Deposits"
+          title="Fund Your Account In Seconds"
+          description="Once the app is installed, choose from a wide range of trusted payment channels — UPI, Paytm and more — and get your deposit confirmed instantly, every time."
+          image="/images/tashanwin-deposit-payment-methods.webp"
+          alt="Tashanwin deposit screen showing payment channel options"
+          reversed
+        />
+
+        <div className="mt-20 grid grid-cols-1 gap-5 sm:grid-cols-3">
           {highlights.map((highlight) => {
             const Icon = highlight.icon;
             return (

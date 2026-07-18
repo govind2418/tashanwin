@@ -3,6 +3,7 @@ import { BONUSES } from "@/lib/data/bonuses";
 import { buildMetadata } from "@/lib/seo";
 import { PageHeader } from "@/components/layout/PageHeader";
 import { GlassCard } from "@/components/ui/GlassCard";
+import { ImageContentRow } from "@/components/ui/ImageContentRow";
 import { CTABanner } from "@/components/home/CTABanner";
 
 export const metadata: Metadata = buildMetadata({
@@ -23,6 +24,24 @@ export default function PromotionPage() {
       />
 
       <section className="mx-auto max-w-7xl px-4 pb-20 sm:px-6 lg:px-8">
+        <div className="flex flex-col gap-20 pb-20 sm:gap-24">
+          <ImageContentRow
+            eyebrow="Welcome Bonus"
+            title="Extra Rewards On Your First Deposit"
+            description="Every new Tashanwin account gets a first-deposit bonus on top of the standard welcome offer. Deposit once, claim instantly, and start playing with a bigger bankroll from day one."
+            image="/images/tashanwin-first-deposit-bonus.webp"
+            alt="Tashanwin extra first deposit bonus screen"
+          />
+          <ImageContentRow
+            eyebrow="Refer & Earn"
+            title="Invite Friends, Earn Real Commission"
+            description="Share your Tashanwin invite link or QR code and earn permanent commission on every friend who plays — up to 85%, paid out transparently with full odds bonus rates."
+            image="/images/tashanwin-refer-and-earn.webp"
+            alt="Tashanwin refer and earn invite screen with QR code"
+            reversed
+          />
+        </div>
+
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
           {BONUSES.map((bonus) => {
             const Icon = bonus.icon;

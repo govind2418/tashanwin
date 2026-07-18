@@ -15,6 +15,8 @@ export default function RegisterPage() {
     <AuthShell
       title="Create Your Account"
       description="Join Tashanwin and claim your welcome bonus today."
+      image="/images/tashanwin-register-screen.webp"
+      imageAlt="Tashanwin app register screen"
     >
       <RegisterForm />
     </AuthShell>

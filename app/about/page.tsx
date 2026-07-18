@@ -3,6 +3,7 @@ import { Award, HeartHandshake, ShieldCheck, Sparkles } from "lucide-react";
 import { buildMetadata } from "@/lib/seo";
 import { PageHeader } from "@/components/layout/PageHeader";
 import { GlassCard } from "@/components/ui/GlassCard";
+import { ImageContentRow } from "@/components/ui/ImageContentRow";
 import { CTABanner } from "@/components/home/CTABanner";
 import { Statistics } from "@/components/home/Statistics";
 
@@ -46,15 +47,16 @@ export default function AboutPage() {
         breadcrumbs={[{ name: "Home", path: "/" }, { name: "About", path: "/about/" }]}
       />
 
-      <section className="mx-auto max-w-4xl px-4 py-12 sm:px-6 lg:px-8">
-        <p className="text-base leading-relaxed text-cream/70 sm:text-lg">
-          We started Tashanwin with a simple idea: gaming platforms shouldn&apos;t
-          feel cheap. Every corner of the experience — the interface, the
-          payouts, the support — is built to a standard that respects your
-          time and your trust. That means instant withdrawals instead of days
-          of waiting, real 24x7 support instead of bots, and a design that
-          feels considered rather than cluttered.
-        </p>
+      <section className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+        <ImageContentRow
+          eyebrow="Our Story"
+          title="A Platform Built On Trust"
+          description="We started Tashanwin with a simple idea: gaming platforms shouldn't feel cheap. Every corner of the experience — the interface, the payouts, the support — is built to a standard that respects your time and your trust. That means instant withdrawals instead of days of waiting, real 24x7 support instead of bots, and a design that feels considered rather than cluttered."
+          image="/images/tashanwin-premium-badge.webp"
+          alt="Tashanwin premium gaming platform badge"
+          imageWidth={800}
+          imageHeight={800}
+        />
       </section>
 
       <section className="mx-auto max-w-7xl px-4 pb-20 sm:px-6 lg:px-8">

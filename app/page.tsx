@@ -5,6 +5,7 @@ import { FAQSection } from "@/components/home/FAQSection";
 import { FeatureCards } from "@/components/home/FeatureCards";
 import { GameCategories } from "@/components/home/GameCategories";
 import { Hero } from "@/components/home/Hero";
+import { PlatformShowcase } from "@/components/home/PlatformShowcase";
 import { Statistics } from "@/components/home/Statistics";
 import { Testimonials } from "@/components/home/Testimonials";
 import { WhyTasanwin } from "@/components/home/WhyTasanwin";
@@ -17,6 +18,7 @@ export default function HomePage() {
       <BonusSection />
       <WhyTasanwin />
       <GameCategories />
+      <PlatformShowcase />
       <DownloadAppSection />
       <Statistics />
       <Testimonials />

@@ -1,41 +1,57 @@
-import type { LucideIcon } from "lucide-react";
-import { Dices, Fish, Gamepad2, Ticket, Trophy, Zap } from "lucide-react";
-
 export type GameCategory = {
   name: string;
   description: string;
-  icon: LucideIcon;
+  image: string;
+  alt: string;
 };
 
 export const GAME_CATEGORIES: GameCategory[] = [
   {
-    name: "Lottery",
-    description: "Quick draws with instant results and big multipliers.",
-    icon: Ticket,
+    name: "Aviator",
+    description: "Cash out mid-flight — the higher it climbs, the bigger the win.",
+    image: "/images/tashanwin-aviator-crash-game.webp",
+    alt: "Tashanwin Aviator crash game",
   },
   {
     name: "Win Go",
     description: "Predict the colour, ride the streak, win big.",
-    icon: Zap,
+    image: "/images/tashanwin-mini-games.webp",
+    alt: "Tashanwin Win Go mini game",
   },
   {
     name: "Slots",
     description: "Premium reels with cinematic bonus rounds.",
-    icon: Dices,
+    image: "/images/tashanwin-slots-game.webp",
+    alt: "Tashanwin slots game",
   },
   {
-    name: "Sports",
+    name: "Cricket",
     description: "Live odds across cricket, football and more.",
-    icon: Trophy,
+    image: "/images/tashanwin-cricket-betting-game.webp",
+    alt: "Tashanwin cricket betting game",
   },
   {
     name: "Fishing",
     description: "Arcade-style hunts with rising jackpots.",
-    icon: Fish,
+    image: "/images/tashanwin-fishing-arcade-game.webp",
+    alt: "Tashanwin fishing arcade game",
   },
   {
-    name: "Casino",
+    name: "Roulette",
     description: "Live-dealer tables with a premium finish.",
-    icon: Gamepad2,
+    image: "/images/tashanwin-roulette-game.webp",
+    alt: "Tashanwin roulette game",
+  },
+  {
+    name: "Lottery",
+    description: "Quick draws with instant results and big multipliers.",
+    image: "/images/tashanwin-lottery-game.webp",
+    alt: "Tashanwin lottery game",
+  },
+  {
+    name: "Live TV",
+    description: "Watch-and-win game shows streamed straight to your lobby.",
+    image: "/images/tashanwin-live-tv-games.webp",
+    alt: "Tashanwin live TV game show",
   },
 ];

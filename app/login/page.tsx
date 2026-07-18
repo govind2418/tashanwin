@@ -12,7 +12,12 @@ export const metadata: Metadata = buildMetadata({
 
 export default function LoginPage() {
   return (
-    <AuthShell title="Welcome Back" description="Login to continue playing on Tashanwin.">
+    <AuthShell
+      title="Welcome Back"
+      description="Login to continue playing on Tashanwin."
+      image="/images/tashanwin-login-screen.webp"
+      imageAlt="Tashanwin app login screen"
+    >
       <LoginForm />
     </AuthShell>
   );
