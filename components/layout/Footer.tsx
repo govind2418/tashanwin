@@ -9,7 +9,7 @@ export function Footer() {
   return (
     <footer id="site-footer" className="border-t border-white/5 bg-charcoal">
       <div className="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
-        <div className="grid gap-10 lg:grid-cols-[1.4fr_1fr_1fr_1fr]">
+        <div className="grid gap-10 lg:grid-cols-[1.2fr_1fr_1fr_1fr_1fr]">
           <div className="flex flex-col gap-4">
             <Logo />
             <p className="max-w-sm text-sm leading-relaxed text-cream/60">
@@ -32,16 +32,30 @@ export function Footer() {
                 {group.title}
               </p>
               <ul className="flex flex-col gap-2.5">
-                {group.links.map((link) => (
-                  <li key={link.href}>
-                    <Link
-                      href={link.href}
-                      className="text-sm text-cream/60 transition-colors hover:text-cream"
-                    >
-                      {link.label}
-                    </Link>
-                  </li>
-                ))}
+                {group.links.map((link) => {
+                  const isExternal = link.href.startsWith("http");
+                  return (
+                    <li key={link.href}>
+                      {isExternal ? (
+                        <a
+                          href={link.href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-sm text-cream/60 transition-colors hover:text-cream"
+                        >
+                          {link.label}
+                        </a>
+                      ) : (
+                        <Link
+                          href={link.href}
+                          className="text-sm text-cream/60 transition-colors hover:text-cream"
+                        >
+                          {link.label}
+                        </Link>
+                      )}
+                    </li>
+                  );
+                })}
               </ul>
             </nav>
           ))}

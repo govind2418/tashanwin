@@ -8,7 +8,7 @@ export const SITE_DESCRIPTION =
 export const TELEGRAM_URL = "https://t.me/+PQ7K-jtOfiZlYzE1";
 
 const TASHANWIN_PLATFORM_URL =
-  "https://www.tashanwin27.com/#/register?invitationCode=521834254689";
+  "https://www.tashanok.cc/#/register?invitationCode=521834254689";
 
 export const REGISTER_URL = TASHANWIN_PLATFORM_URL;
 export const LOGIN_URL = TASHANWIN_PLATFORM_URL;
@@ -55,6 +55,14 @@ export const FOOTER_LINK_GROUPS: { title: string; links: NavLink[] }[] = [
       { label: "Terms & Conditions", href: "/terms/" },
       { label: "Responsible Gaming", href: "/responsible-gaming/" },
       { label: "Disclaimer", href: "/disclaimer/" },
+    ],
+  },
+  {
+    title: "Quick Links",
+    links: [
+      { label: "Sikkim Game", href: "https://sikkimgame.co.in" },
+      { label: "BDG Win", href: "https://bdgwin.ai" },
+      { label: "Daman Game", href: "https://damangame.co.in" },
     ],
   },
 ];

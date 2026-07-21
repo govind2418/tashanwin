@@ -1,3 +1,4 @@
+import { AppInfoTable } from "@/components/home/AppInfoTable";
 import { BonusSection } from "@/components/home/BonusSection";
 import { CTABanner } from "@/components/home/CTABanner";
 import { DownloadAppSection } from "@/components/home/DownloadAppSection";
@@ -31,6 +32,7 @@ export default function HomePage() {
       <JsonLd data={siteNavigationJsonLd(NAV_LINKS)} />
       <JsonLd data={gamesCollectionJsonLd(GAME_CATEGORIES)} />
       <Hero />
+      <AppInfoTable />
       <WhatIsTashanWin />
       <FeatureCards />
       <LoginGuideSection />
