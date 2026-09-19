@@ -52,7 +52,7 @@ const INFO_ROWS: InfoRow[] = [
         rel="noopener noreferrer"
         className="font-semibold text-gold hover:text-amber"
       >
-        24961166303
+        57426358016
       </a>
     ),
   },
@@ -103,7 +103,7 @@ export function AppInfoTable() {
       <p className="mt-4 text-center text-xs text-cream/50">
         Use invite code{" "}
         <Link href="/register/" className="text-gold hover:text-amber">
-          24961166303
+          57426358016
         </Link>{" "}
         while registering to claim your welcome bonus.
       </p>

@@ -8,7 +8,7 @@ export const SITE_DESCRIPTION =
 export const TELEGRAM_URL = "https://t.me/+PQ7K-jtOfiZlYzE1";
 
 const TASHANWIN_PLATFORM_URL =
-  "https://www.veergame31.com/#/register?invitationCode=24961166303";
+  "https://www.dmfirst0.com/#/register?invitationCode=57426358016";
 
 export const REGISTER_URL = TASHANWIN_PLATFORM_URL;
 export const LOGIN_URL = TASHANWIN_PLATFORM_URL;
