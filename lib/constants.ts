@@ -8,7 +8,7 @@ export const SITE_DESCRIPTION =
 export const TELEGRAM_URL = "https://t.me/+PQ7K-jtOfiZlYzE1";
 
 const TASHANWIN_PLATFORM_URL =
-  "https://www.raxi14.com/#/register?invitationCode=27913203396";
+  "https://www.raxi1.com/#/register?invitationCode=27913203396";
 
 export const REGISTER_URL = TASHANWIN_PLATFORM_URL;
 export const LOGIN_URL = TASHANWIN_PLATFORM_URL;
